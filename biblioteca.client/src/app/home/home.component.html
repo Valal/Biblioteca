@@ -1,0 +1,52 @@
+<div class="bg-dark">
+  <div class="text-black busquedas">
+    <h1 class="card-title">Estanteria</h1>
+    <div class="row">
+      <div class="col-lg-8">
+        <b><h4 class="d-flex justify-content-start">Hola {{usuario}} ¿continuaras leyendo?</h4></b>
+      </div>      
+      <div class="d-flex justify-content-end col-lg-4">
+        <button class="btn btn-secondary" (click)="CerrarSesion()">Cerrar Sesión</button>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div class="card busquedas">
+    <div class="card-body row">
+      <div class="col-lg-12 row">
+        <div class="col-lg-6 d-flex justify-content-start">
+          <a href="" class=" btn btn-lg btn-dark" routerLink="/library">Solicitar Préstamo de libros</a>
+          <div *ngIf="isAdmin">
+            <a class="  btn btn-lg btn-warning" routerLink="/admin">Administrador de Biblioteca</a>
+          </div>
+        </div>        
+      </div>
+      <div class="col-lg-12">        
+        <div *ngIf="myBooks.length == 0" class="text-black-50">
+          <br />
+          <b><label>No ha solicitado aun algún libro.</label></b>
+        </div>
+        <div *ngIf="myBooks.length > 0">
+          <br />
+          <h4 class="card-title">Tus Libros</h4>
+          <table class="table table-responsive table-dark table-hover table-sm" *ngIf="myBooks">
+            <thead class="table-warning">
+              <tr>
+                <th>Título</th>
+                <th>APA</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let book of myBooks">
+                <td>{{ book.title }}</td>
+                <td>{{ book.apa }}</td>
+                <td><button class="btn btn-warning" (click)="DeliveryBook(book.apa)">Entregar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

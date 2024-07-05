@@ -1,0 +1,12 @@
+﻿[
+  {
+    "idRolsByUser": 1,
+    "idUser": 1,
+    "role": 1
+  },
+  {
+    "idRolsByUser": 2,
+    "idUser": 2,
+    "role": 1
+  }
+]

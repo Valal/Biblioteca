@@ -1,0 +1,15 @@
+C:\Codes\Biblioteca\Biblioteca.Application\bin\Debug\net8.0\Biblioteca.Application.deps.json
+C:\Codes\Biblioteca\Biblioteca.Application\bin\Debug\net8.0\Biblioteca.Application.dll
+C:\Codes\Biblioteca\Biblioteca.Application\bin\Debug\net8.0\Biblioteca.Application.pdb
+C:\Codes\Biblioteca\Biblioteca.Application\bin\Debug\net8.0\Biblioteca.Domain.dll
+C:\Codes\Biblioteca\Biblioteca.Application\bin\Debug\net8.0\Biblioteca.Domain.pdb
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.csproj.AssemblyReference.cache
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.AssemblyInfoInputs.cache
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.AssemblyInfo.cs
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.csproj.CoreCompileInputs.cache
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Bibliote.A09E2D7B.Up2Date
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.dll
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\refint\Biblioteca.Application.dll
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.pdb
+C:\Codes\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\ref\Biblioteca.Application.dll

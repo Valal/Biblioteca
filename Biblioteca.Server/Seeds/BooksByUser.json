@@ -1,0 +1,14 @@
+[
+  {
+    "idBookByUser": 1,
+    "idUser": 1,
+    "apa": "Tolkien, (1954)",
+    "loanDate": "2024-07-02"
+  },
+  {
+    "idBookByUser": 2,
+    "idUser": 2,
+    "apa": "Benítez, (2003)",
+    "loanDate": "2022-01-02"
+  }
+]

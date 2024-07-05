@@ -1,0 +1,40 @@
+[
+  {
+    "name": "George",
+    "lastNames": "R. R. Martin",
+    "title": "Game of thrones",
+    "year": 1996,
+    "editorial": "Chronicle",
+    "apa": "R. R. Martin, (1996)",
+    "place": "California, E.U.",
+    "availables": 2
+  },
+  {
+    "name": "Maurice",
+    "lastNames": "Druon",
+    "title": "Reyes Malditos",
+    "year": 1960,
+    "editorial": "Ediciones B. México",
+    "apa": "Druon, (1960)",
+    "place": "Jalisco, México",
+    "availables": 1
+  },
+  {
+    "name": "J. R. R.",
+    "lastNames": "Tolkien",
+    "title": "El Señor de los Anillos",
+    "year": 1954,
+    "editorial": "Ediciones Minotauro",
+    "apa": "Tolkien, (1954)",
+    "availables": 3
+  },
+  {
+    "name": "Juan José",
+    "lastNames": "Benítez",
+    "title": "Caballo de Troya",
+    "year": 2003,
+    "editorial": "Planeta Agostini",
+    "apa": "Benítez, (2003)",
+    "availables": 1
+  }
+]

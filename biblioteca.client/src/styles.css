@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.portada {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(185,114,6,1) 30%, rgba(142,88,5,1) 40%);
+}
+body {
+  background-image: image-set("assets/img/fondo.png");
+  background-position: center top;
+  background-size: 100% auto;
+}
+.busquedas {
+  background: rgb(222,205,184);
+  background: radial-gradient(circle, rgba(222,205,184,0.9071925754060325) 45%, rgba(222,181,131,0.9071925754060325) 70%, rgba(147,69,3,1) 90%);
+}

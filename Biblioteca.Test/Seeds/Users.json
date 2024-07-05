@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Pablo",
+    "lastName": "Miramontes",
+    "password": "1234Pablo",
+    "user": "pabloM",
+    "idUser": 1
+  },
+  {
+    "name": "Gabriela",
+    "lastName": "Lopez",
+    "password": "1234Gaby",
+    "user": "GabyLo",
+    "idUser": 2
+  },
+  {
+    "name": "Alma",
+    "lastName": "Vidalia",
+    "password": "1234vidalia",
+    "user": "Vidalma",
+    "idUser": 3
+  },
+  {
+    "name": "Judith",
+    "lastName": "Campa",
+    "password": "campaj50",
+    "user": "juca",
+    "idUser": 4
+  }
+]

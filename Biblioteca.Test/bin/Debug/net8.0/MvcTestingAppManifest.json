@@ -1,0 +1,7 @@
+{
+  "Biblioteca.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Codes\\Biblioteca\\Biblioteca.Application",
+  "Biblioteca.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Codes\\Biblioteca\\Biblioteca.Domain",
+  "Biblioteca.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Codes\\Biblioteca\\Biblioteca.Infrastructure",
+  "Biblioteca.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Codes\\Biblioteca\\Biblioteca.Server",
+  "Biblioteca.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Codes\\Biblioteca\\Biblioteca.Utilities"
+}

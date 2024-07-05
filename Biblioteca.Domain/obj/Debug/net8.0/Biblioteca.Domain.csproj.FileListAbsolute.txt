@@ -1,0 +1,11 @@
+C:\Codes\Biblioteca\Biblioteca.Domain\bin\Debug\net8.0\Biblioteca.Domain.deps.json
+C:\Codes\Biblioteca\Biblioteca.Domain\bin\Debug\net8.0\Biblioteca.Domain.dll
+C:\Codes\Biblioteca\Biblioteca.Domain\bin\Debug\net8.0\Biblioteca.Domain.pdb
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.AssemblyInfoInputs.cache
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.AssemblyInfo.cs
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.csproj.CoreCompileInputs.cache
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.dll
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\refint\Biblioteca.Domain.dll
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.pdb
+C:\Codes\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\ref\Biblioteca.Domain.dll

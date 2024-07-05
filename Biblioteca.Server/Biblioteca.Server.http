@@ -1,0 +1,4 @@
+@Biblioteca.Server_HostAddress = http://localhost:5202
+
+GET {{Biblioteca.Server_HostAddress}}/books/
+Accept: application/json

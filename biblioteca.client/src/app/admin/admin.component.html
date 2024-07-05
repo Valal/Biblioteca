@@ -1,0 +1,119 @@
+<div class="card busquedas">
+  <div class="card-body row">
+    <div class="col-lg-12 d-flex justify-content-end">
+      <button class="btn btn-secondary" (click)="CerrarSesion()">Cerrar Sesión</button>
+    </div>
+    <div class="col-lg-12 row">
+      <div class=" col-lg-4 p-4">
+        <button class="d-flex justify-content-start btn btn-dark btn-sm" (click)="Back()"><i class="bi-arrow-left"></i></button>
+      </div>
+      <div class="col-lg-4">
+        <h1 class="d-flex justify-content-center card-title">Administrador</h1>
+      </div>
+    </div>
+    <div class="col-lg-12 row">
+      <div class="d-flex justify-content-start col-lg-6">
+        <h4>Bienvenido {{usuario}}</h4>
+      </div>
+      <div class="d-flex justify-content-end col-lg-6">
+        <button class="btn btn-dark text-warning" data-bs-toggle="modal" data-bs-target="#AddBooksModal"><i class="bi-plus-lg"></i>Libro</button>
+      </div>
+      <hr />
+    </div>
+    <div class="col-lg-12 row">
+      <div class="col-lg-3 bg-dark text-white ">
+        <h5>Opciones de Búsqueda</h5><br />
+        <b><label for="#txtApa" class="form-label d-flex justify-content-start">Buscar libro por APA</label></b>
+        <input type="text" class="form-control" value="" id="txtApa" #apa />
+
+        <b><label for="#slYears" class="form-label d-flex justify-content-start">Buscar libros por Año de Publicación</label></b>
+
+        <select class="form-select" [(ngModel)]="slYears" placeholder="Seleccione...">
+          <option value="0" selected>Seleccione...</option>
+          <option *ngFor="let y of years;" [value]="y.year" [ngValue]="y.year"> {{y.year}}</option>
+        </select>
+        <hr />
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-secondary" (click)="GetBooksByParams(apa)">Buscar</button>
+          <button class="btn btn-light" (click)="Clean()">Limpiar</button>
+        </div>
+      </div>
+      <div class="col-lg-9 bg-dark" *ngIf="books">
+        <h4 class="text-white">Libros Disponibles</h4>
+        <table class="table table-responsive table-dark table-hover table-striped">
+          <thead class="table-warning">
+            <tr>
+              <th>APA</th>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Editorial</th>
+              <th>Lugar</th>
+              <th>Año<br /> Publicación</th>
+              <th>Disponibles</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let book of books">
+              <td>{{book.apa}}</td>
+              <td>{{book.title}}</td>
+              <td>{{book.name}} {{book.lastNames}}</td>
+              <td>{{book.editorial}}</td>
+              <td>{{book.place}}</td>
+              <td>{{book.year}}</td>
+              <td>{{book.availables}}</td>
+              <td><button class="btn btn-danger" (click)="DeleteBook(book.apa)"><i class="bi-trash"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+<div class="modal fade" id="AddBooksModal" role="dialog" aria-labelledby="NewBooks" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header busquedas">
+        <h4 class="modal-title" id="NewBooks">Agregar Nuevo Libro</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtTitle"><span style="color:red">*</span>Título:</label></b>
+          <input class="form-control" type="text" id="txtTitle" maxlength="300" pattern="[a-zA-Z0-9]*" value="" required #title />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtName"><span style="color:red">*</span>Nombre:</label></b>
+          <input class="form-control" type="text" id="txtName" value="" pattern="[a-zA-Z]*" required #name />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtLastNames"><span style="color:red">*</span>Apellidos:</label></b>
+          <input class="form-control" type="text" id="txtLastNames" value="" pattern="[a-zA-Z]*" required #lastNames />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtYear"><span style="color:red">*</span>Año de publicación:</label></b>
+          <input class="form-control" type="text" id="txtYear" value="" maxlength="4" pattern="[0-9]*" required #year />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtAvailables"><span style="color:red">*</span>Disponibles:</label></b>
+          <input class="form-control" type="text" id="txtAvailables" value="" #availables maxlength="3" required pattern="[0-9]*" />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtPlace"><span style="color:red">*</span>Lugar:</label></b>
+          <input class="form-control" type="text" id="txtPlace" value="" #place maxlength="250" required pattern="[a-zA-Z0-9]*" />
+        </div>
+        <div class="col-lg-12">
+          <b><label class="form-label d-flex justify-content-start" for="txtEditorial"><span style="color:red">*</span>Editorial:</label></b>
+          <input class="form-control" type="text" id="txtEditorial" value="" maxlength="250" pattern="[a-zA-Z0-9]*" required #editorial />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div>
+          <button class="btn btn-warning" (click)="AddBook(name, lastNames, title, year, place, editorial, availables )">Agregar Libro</button>
+        </div>
+        <button type="button" id="btnCloseModal" class="btn btn-secondary" data-bs-dismiss="modal" (click)="CleanAddBook()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
